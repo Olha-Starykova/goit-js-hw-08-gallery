@@ -13,7 +13,7 @@ html {
   box-sizing: inherit;
 }
 
-body {
+/* body {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,10 +62,10 @@ body {
 
 .gallery__link:hover {
   cursor: zoom-in;
-}
+} */
 
 /* Lightbox */
-.lightbox {
+/* .lightbox {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,4 +137,100 @@ body {
 .lightbox__button:hover,
 .lightbox__button:focus {
   background-color: rgba(0, 0, 0, 0.5);
+} */
+
+/* modal mob */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000000;
+  opacity: 0.5;
+  height: 988px;
+  width: 320px;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 958px;
+  min-width: 280px;
+  padding-left: 20px;
+  padding-top: 48px;
+  padding-right: 20px;
+  padding-bottom: 41px;
+  background-color: #ffffff;
+}
+.content {
+  list-style: none;
+}
+
+.content-list {
+  display: flex;
+}
+
+.content-list-item {
+}
+.content-list-item-show {
+}
+
+.title-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  margin-top: 30px;
+  margin-bottom: 21px;
+}
+.middle {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 0px;
+}
+.lorem {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  width: 240px;
+  height: 236px;
+  margin-bottom: 21px;
+  margin-top: 0px;
+}
+
+.modal-btn-color {
+  width: 112.58px;
+  height: 44px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  margin-right: 10px;
+  color: #ffffff;
+  background: #ff6b01;
+  border-radius: 5px;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal-btn-white {
+  width: 112.58px;
+  height: 44px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+.fix {
+  display: flex;
 }
